@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font: normal 16px Helvetica, Arial, sans-serif;
+}
+
+.nav-main li a {
+    color: green;
+}
+
+.nav-main li a:hover {
+    color: red;
+}
