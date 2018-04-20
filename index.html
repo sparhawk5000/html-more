@@ -3,14 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>HTML More</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
       <nav class="nav-main">
         <ul>
           <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Info</a></li>
         </ul>
       </nav>
+
+      <section class="container-form">
+          <!-- build dynamic query strings using a form -->
+          <form action="https://www.imdb.com/find" target="_blank" method="get">
+            <p class="lead"><label for="query">Enter a query:</label></p>
+            <p><input id="query" type="text" name="q"></p>
+
+            <p><label for="cat">Enter a Search Category</label></p>
+            <p>
+                <select id="cat">
+                  <option value="all">All</option>
+                  <option value="tt">Title</option>
+                  <option value="ep">TV Episodes</option>
+                  <option value="nm">Name</option>
+                  <option value="co">Company</option>
+                  <option value="kw">Keywords</option>
+                </select>
+            </p>
+
+            <p><button type="submit">Submit</button></p>
+          </form>
+
+          <p><a href="https://www.imdb.com/find?ref_=nv_sr_fn&q=yo&s=all">link to breaking bad search results</a></p>
+      </section>
 
   </body>
 </html>

@@ -2,15 +2,41 @@
     box-sizing: border-box;
 }
 
-
 body {
     font: normal 16px Helvetica, Arial, sans-serif;
 }
+.nav-main {
+    background-color: grey;
+}
+
+.nav-main li {
+    display: inline-block;
+}
 
 .nav-main li a {
-    color: green;
+    color: brown;
+    padding: 20px;
+    display: block;
 }
 
 .nav-main li a:hover {
     color: red;
+}
+
+.nav-main li a:active {
+    background-color: blue;
+}
+
+.container-form {
+    border: 1px solid red;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+p.lead {
+    margin-bottom: 9px;
+}
+
+p {
+    margin-bottom: 18px;
 }
